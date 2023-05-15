@@ -1,0 +1,443 @@
+
+
+
+body{
+
+  background-color: black;
+
+  color: white;
+
+  font-family: courier;
+}
+
+#ProgramWrapper{
+  border: 0.2vw solid orange;
+  margin-top:10px;
+  padding: 0.5vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+}
+
+#ViewsPanel{
+  border: 3px dotted chocolate;
+  display: flex;
+  width:1040px;
+  height: 400px;
+  float: left;
+  grid-column: span 2;
+
+
+}
+
+
+
+#TVDIV{
+  border: 2px solid darkred;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;;
+
+
+}
+
+  #TVDIV h3{
+    border: 2px solid red;
+    text-align: center;
+    width: 150px;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  #TVCanvas{
+
+    border: 2px solid red;
+    margin: 10px;
+  }
+
+
+
+#CAMVDIV{
+  border: 2px solid green;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#CAMVDIV h3 {
+  border: 2px solid lawngreen;
+  text-align: center;
+  width: 150px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+#CamCanvas{
+  border: 2px solid green;
+  margin: 10px;
+}
+
+
+#SVDIV{
+  border: 2px solid orange;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#SVDIV h3 {
+  border: 2px solid orange;
+  text-align: center;
+  width: 150px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+#SVCanvas{
+  border: 2px solid orange;
+  margin: 10px;
+}
+
+
+
+#camInfoStatsSection{
+  border: 3px solid darkblue;
+  margin: 2px;
+  margin-top: -2px;
+  margin-left: 0px;
+  padding: 3px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+/*Firefox specific styles*/
+@-moz-document url-prefix(){
+  #camInfoStatsSection{
+    border: 3px solid darkblue;
+    margin: 2px;
+    margin-top: -2px;
+    margin-left: 45px;
+    padding: 3px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+
+
+#camStatsPanel {
+  width: 200px;
+  border: 2px solid #ab0000;
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+  margin: 5px;
+
+
+}
+
+.camStatFlexRow{
+  color: white;
+}
+
+.camStatFlexRow h3{
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+
+}
+
+.camStatFlexRow {
+  width: 190px;
+  height: 25px;;
+
+  padding: 2px;
+  margin: auto;
+  margin-top: 2px;
+  border: 2px solid #ab0000;
+  display: flex;
+  flex-direction: row;
+
+  font-size: 0.8em;
+
+}
+
+#camHatsStatsPanel {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #1a23c4;
+  width: 200px;
+  margin-top: 5px;
+  margin-right: 0px;
+
+}
+
+.camHatStatsFlexRow {
+
+  width: 190px;
+  height: 50px;
+
+
+  padding: 1px;
+  margin: auto;
+  border: 2px solid #1a23c4;
+  display: flex;
+  flex-direction: row;
+
+  font-size: 0.8em;
+}
+
+.camHatStatsFlexRow h3 {
+  margin-left: 5px;
+}
+
+
+
+#worldHatsStatsPanel {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #850066;
+  width: 200px;
+  float: right;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 0px;
+}
+
+.worldHatStatsFlexRow {
+
+  width: 190px;
+    height: 50px;
+    padding: 1px;
+    margin: auto;
+    border: 2px solid #850066;
+    display: flex;
+    flex-direction: row;
+
+    font-size: 0.8em;
+
+
+}
+
+
+.worldHatStatsFlexRow h3{
+  margin-left: 5px;
+}
+
+
+#warningsPanel{
+  margin-top: 5px;
+    ;
+    height: 195px;
+    width: 190px;
+    background-color: #003300;
+
+}
+
+
+#warningsPanel section{
+  border: 2px solid grey;
+  margin-top: 12px;
+  margin-left: 10px;
+  height: 165px;
+  width: 160px;;
+  background-color: black;
+  color: lawngreen;
+  padding: 4px;
+}
+
+#warningsPanel section div{
+  font-size: 0.8em;
+}
+
+
+
+
+
+
+
+
+#functionsPanelWrapper{
+  display: grid;
+
+  border: 0.5vh solid orange;
+  width: 330px;
+}
+
+
+
+
+
+#toggleFunctionsPanel section{
+  border: 2px solid orange;
+  margin: 5px;
+  padding: 5px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+#toggleFunctionsPanel section section{
+  border: 2px dashed white;
+
+
+}
+
+#toggleFunctionsPanel section section button{
+  font-size: 0.7em;;
+  width: 90%;
+  padding-left: 2px;
+  padding-top: 2px;
+
+  background-color: black;
+  color: yellow;
+  border: 2px solid white;
+
+
+}
+
+#toggleFunctionsPanel section section div{
+  border: 1px solid green;
+  margin-top: 20px;
+  width: 10px;
+  height: 15px;
+
+
+}
+
+
+
+
+
+
+
+
+
+#CamFunctionsPanel{
+  padding: 1vh;
+  margin: 1vh;
+  border: 2px solid blue;
+  width: 50%;
+}
+
+#CamFunctionsPanel h3{
+  color: #3d57ff;
+}
+
+
+#RenderFunctionsPanel{
+  padding: 2px;
+  margin: 2px;
+  border: 2px solid green;
+  width: 50%;
+}
+
+#RenderFunctionsPanel h3{
+  color: #04c224;
+}
+
+
+
+
+#toggleLensFunctionsPanel{
+
+  border: 2px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+
+#messagesPanel{
+
+  border: 3px solid orange;
+  margin-left: -155px;
+  background-color: #000363;
+  width: 645px;
+  height: 300px;
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#SceneControlsDiv{
+  border: 2px solid red;
+  background-color: #242424;
+  height: 250px;
+  padding: 10px;
+}
+
+
+#SceneControlsDiv section{
+  border: 3px ridge orange;
+  background-color: black;
+  width: 108px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5px;
+  padding: 5px;
+}
+
+#SceneControlsDiv section button{
+  border: 4px ridge grey;
+  font-family: Monospace;
+  color: yellow;
+}
+
+
+#joystickArea{
+  border: 7px ridge grey;
+  width: 150px;
+  height: 180px;
+  margin-left: 160px;
+  margin-top: -103px;
+
+  background:
+  repeating-linear-gradient(45deg, black,
+  black 8px, darkorange 5px, darkorange 15px);
+}
+
+
+#joystick{
+  background-color: black;
+  margin: auto;
+  margin-top: 5px;
+  border: 2px solid red;
+  width: 115px;
+  height: 115px;
+
+}
+
+#joystick canvas{
+  margin: auto;
+  border: 2px solid yellow;
+  margin-left: 5px;
+  margin-top: 5px;
+  background:url("joystickImage.png");
+}
+
+
+#joystickActiveTextIndicator{
+ color: black;
+  text-align: center;
+  border: 2px solid red;
+  width: 110px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: black;
+}
