@@ -8,6 +8,41 @@ body{
 }
 
 
+
+
+/*desktop query*/
+@media only screen and (min-width: 600px) {
+  
+#ProgramWrapper{
+  border: 20px solid red;
+  padding: 0.5vh;
+  margin-top:20px;
+}
+
+#CamCanvas{
+
+  border: 2px solid lightblue;
+  margin-top: 2vh;
+  margin-left: 2vw;
+}
+
+#ViewsPanel{
+
+  border: 3px double green;
+}
+
+
+
+}
+
+
+/*Mobile query*/
+@media only screen and (max-width: 600px) {
+
+  
+}
+
+
 #documentationDescription{
   border: 2px dashed white;
   width: 30%;
@@ -23,11 +58,6 @@ body{
 
 
 
-#ProgramWrapper{
-  border: 0.2vw solid orange;
-  padding: 0.5vh;
-  margin-top:20px;
-}
 
 
 #TVCanvas{
@@ -38,12 +68,7 @@ body{
 }
 
 
-#CamCanvas{
 
-  border: 2px solid yellow;
-  margin-top: 2vh;
-  margin-left: 2vw;
-}
 
 #functionsPanelWrapper{
 
