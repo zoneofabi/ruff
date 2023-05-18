@@ -1,0 +1,782 @@
+/*Desktop query*/
+@media only screen and (min-width: 600px) {
+
+#ProgramWrapper {
+    border: 2px solid lightseagreen;
+    margin-top: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr 0.7fr;
+    
+    
+
+  }
+
+
+  #ProgramWrapper_LeftColumn{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: darkgreen;
+    border: 3px ridge orange;
+    padding: 5px;
+
+    overflow: hidden;
+
+  }
+
+
+  #ProgramWrapper_CenterColumn{
+    grid-row-start: 1;
+      grid-row-end: 3;
+      background-color: darkred;
+      border: 3px ridge orange;
+      padding: 5px;
+
+      overflow: hidden;
+  }
+
+  #ProgramWrapper_RightColumn{
+      grid-row-start: 1;
+      grid-row-end: 3;
+      background-color: navy;
+      border: 3px ridge orange;
+      padding: 5px;
+
+      overflow: hidden;
+  }
+
+ 
+
+  
+
+
+
+  #TVDIV {
+    border: 2px solid darkred;
+    background-color: darkred;
+    margin-top: 5px;
+    width: 100%;
+  }
+
+  #TVDIV h3 {
+    border: 2px solid red;
+    text-align: center;  
+    margin: auto;
+  }
+
+  #TVCanvas {
+
+    border: 2px solid red;
+    display: block;
+    margin: auto;
+    width: 90%;
+
+  }
+
+
+
+  #CAMVDIV {
+    border: 2px dashed black;
+    background-color: black;
+   
+  }
+
+  #CAMVDIV h3 {
+    border: 2px solid lawngreen;
+    text-align: center;
+    font-size: 0.7em;;
+    margin: auto;
+  
+  }
+
+  #CamVScreensFlexBox{
+    display: flex;
+    border: 2px solid purple;
+    flex-direction: row;
+    
+    height: 100%;
+  }
+
+  #CamCanvas {
+    border: 3px ridge darkblue;
+    display: block;
+    margin: auto;
+    width: 75%;
+    height: 100%;
+    aspect-ratio: 1/0.9;
+  }
+
+  #CamVLeftHUDLightPanel{
+    overflow: hidden;
+    border: 4px outset #afbce3;
+    height: 100%;
+    width: 10%;
+    display: flex;
+    background-color: #595959;
+    flex-direction: column;
+    justify-content:space-between;
+    
+    
+    min-height:100%;
+    
+   
+  }
+
+
+    .CamVLeftHUDLightPanel_GreenArrow{
+      
+      border: 2px solid transparent;
+      width: 90%;
+      height: 3vw;
+      margin: auto;
+      
+      display: flex;
+      flex-direction: row;
+      
+      
+    }
+
+    
+
+    .CamVLeftHUDLightPanel_RedArrow {
+      
+        border: 2px solid transparent;
+        width: 90%;
+        height: 3vw;
+        margin: auto;
+        
+        display: flex;
+        flex-direction: row;
+        
+      
+    }
+
+
+  #CamVRightHUDLightPanel{
+    border: 4px outset #afbce3;
+    height: 100%;
+    width: 10%;
+    background-color: #595959;
+   
+  }
+
+    .CamVRightHUDLightPanel_GreenArrow {
+  
+      border: 2px solid transparent;
+      width: 90%;
+      height: 3vw;
+      margin: auto;
+  
+      display: flex;
+      flex-direction: row;
+  
+  
+    }
+
+    .CamVRightHUDLightPanel_RedArrow {
+    
+      border: 2px solid transparent;
+      width: 90%;
+      height: 3vw;
+      margin: auto;
+      
+      display: flex;
+      flex-direction: row;
+    
+    
+    }
+ 
+
+
+  #SVDIV {
+    border: 2px solid orange;
+    
+  }
+
+  #SVDIV h3 {
+    border: 2px solid orange;
+    text-align: center;
+    margin: auto;
+  }
+
+  #SVCanvas {
+    border: 2px solid orange;
+    display: block;
+    margin: auto;
+    width: 90%;
+  }
+
+
+
+  #camInfoStatsSection {
+    border: 3px solid white;
+    margin: 2px;
+    
+   
+    padding: 3px;
+ 
+    
+  }
+
+
+  /*Firefox specific styles*/
+  @-moz-document url-prefix() {
+    #camInfoStatsSection {
+      border: 3px solid darkblue;
+      margin: 2px;
+      
+      padding: 3px;
+   
+    }
+
+  }
+
+
+
+  #camStatsPanel {
+    
+    border: 2px solid #ab0000;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    margin: 5px;
+  }
+
+  #camStatsPanel h2{
+    color: pink;
+    border: 2px dotted white;
+    font-size: 1em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .camStatFlexRow {
+   
+    
+    width: 100%;
+  
+    background-color: darkred;
+    border: 1px dotted white;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.7em;
+    overflow: hidden;
+  }
+
+    .camStatFlexRow h3 {
+     float: left;
+     margin-bottom: 0px;
+     margin-top: 0px;
+  
+    }
+    
+
+  #camHatsStatsPanel {
+    border: 2px solid #1a23c4;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+  }
+
+  #camHatsStatsPanel h2{
+
+    color: pink;
+    border: 2px dotted white;
+    font-size: 1em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+  }
+
+  .camHatStatsFlexRow {
+
+   
+  width: 100%;
+  
+    background-color: darkred;
+    border: 1px dotted white;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.7em;
+    overflow: hidden;
+  }
+
+  .camHatStatsFlexRow h3 {
+    float: left;
+      margin-bottom: 0px;
+      margin-top: 0px;
+  }
+
+
+
+  #worldHatsStatsPanel {
+    visibility: hidden;
+    display: none;
+    
+    
+    border: 2px solid #850066;
+  
+  
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 0px;
+  }
+
+  .worldHatStatsFlexRow {
+    visibility: hidden;
+      display: none;
+  
+    height: 25px;
+      padding: 2px;
+      margin: auto;
+      margin-top: 2px;
+      border: 2px solid green;
+      display: flex;
+      flex-direction: row;
+      font-size: 0.7em;
+
+
+  }
+
+
+  .worldHatStatsFlexRow h3 {
+    visibility: hidden;
+      display: none;
+    margin: auto;
+  }
+
+
+  #warningsPanel {
+    border: 5px solid darkgrey;
+    margin-top: 5px;
+    background-color: #003300;
+    color: lawngreen;
+  }
+
+
+  #warningsPanel section {
+    border: 2px solid lawngreen;
+    
+    color: lawngreen;
+    
+  }
+
+    #warningsPanel section h4{
+      margin-top: 2px;
+      margin-bottom: 0px;
+
+    }
+
+  #warningsPanel section div {
+    font-size: 1em;
+    
+    border: 2px solid lawngreen;
+    color: lawngreen;
+  }
+
+
+
+
+
+  #functionsPanelWrapper {
+    display: flex;
+    flex-direction: row;
+    border: 10px dotted orange;
+  }
+
+
+  #toggleFunctionsPanel{
+
+    width: 97%;
+
+    margin: auto;
+    
+    visibility: visible;
+    border: 2px solid blue;
+  }
+
+  #toggleFunctionsPanel h3{
+
+    color: orange;
+    font-size: 0.8em;
+    margin-bottom: 0.2vw;
+    margin-top: 0.2vw;
+  }
+
+
+  #toggleFunctionsPanel_BasicSwitches {
+    border: 2px dotted blue;
+    background-color: darkblue;
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  #toggleFunctionsPanel_ConvergenceLensSwitches{
+  border: 2px dotted red;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+
+  }
+
+
+
+  .toggleButtonContainer{
+    border: 2px dashed yellowgreen;
+    margin: 2px;
+    width: 5.5vw;
+    height: 2.5vw;
+    
+    overflow: hidden;
+  }
+
+  .toggleButtonContainer button {
+    font-size: 0.6vw;
+    height: 80%;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0px;
+    top: 0;
+  }
+
+  .toggleButtonContainer div {
+    border: 1px solid green;
+    width: 100%;
+    height: 20%;
+    margin: auto;    
+  }
+
+
+
+
+
+  #IncrementalCamFunctionsSection{
+    border: 2px ridge red;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    background-color: darkslategrey;
+  }
+
+
+
+  #CamFunctionsPanel {  
+    border: 2px solid blue;
+    width: 7vw;
+    height: 7vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+  }
+
+  #CamFunctionsPanel h3 {
+    color: #3d57ff;
+    font-size: 1em;
+  }
+
+  #CamFunctionsPanel_RotateIndicator{
+    width: 100%;
+    height: 100%;
+    background-color: #000363;
+  }
+
+  
+
+  .CamFunctionsPanel_ButtonContainer{
+    width: 2vw;
+    height: 2vw;
+    border: 2px ridge black;
+    overflow: hidden;
+
+  }
+
+  .CamFunctionsPanel_ButtonContainer:nth-of-type(1){
+    visibility: hidden;
+  }
+
+  .CamFunctionsPanel_ButtonContainer:nth-of-type(3) {
+    visibility: hidden;
+  }
+
+  .CamFunctionsPanel_ButtonContainer:nth-of-type(7) {
+    visibility: hidden;
+  }
+
+  .CamFunctionsPanel_ButtonContainer:nth-of-type(9) {
+    visibility: hidden;
+  }
+
+    
+
+
+
+  #CamFunctionsPanel button{
+    background-color: #5c5c5c;
+    color: yellow;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+  }
+
+
+
+  #CamFunctionsTraversingPanel{
+    border: 2px ridge black;
+    height: 7vw;
+    width: 2.3vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+  }
+  
+  #CamFunctionsTraversingPanel button{
+    background-color: #5c5c5c;
+    color: orange;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+  }
+  .CamFunctionsTraversingPanel_ButtonContainer{
+    
+    width: 2vw;
+    height: 2vw;
+    border: 2px ridge black;
+    overflow: hidden;
+
+  }
+
+  #CamFunctionsPanel_TraverseIndicator{
+    border: 2px solid blue;
+    background-color: #000363;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+  #RenderFunctionsPanel {
+    display: block;
+    margin: auto;
+    border: 2px solid red;
+    height: 6vw;
+    width: 90%;
+    background-color: grey;
+    overflow: hidden;
+  }
+
+  #RenderFunctionsPanel h3{
+    font-size: 1em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+
+  #RenderFunctionsPanel_buttonArray{ 
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid yellow;
+    background-color: #1a23c4;
+
+
+  }
+
+  .RenderFunctionsButtonContainer{
+    border: 2px solid purple;
+    width: 5.0vw;
+      height: 4.0vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #RenderFunctionsPanel_buttonArray button{
+    font-size: 0.6em;
+      height: 80%;
+      width: 100%;
+      display: block;
+      border: 2px ridge red;
+      font-family: Monospace;
+      margin-top: 0px;
+      color: black;
+    }
+
+  .RenderFunctionsButton_IndicatorLight{
+    height: 20%;
+    border: 2px solid white;
+  }
+
+
+  }
+
+  #RenderFunctionsPanel h3 {
+    color: #04c224;
+  }
+
+
+
+
+  #toggleLensFunctionsPanel {
+
+    border: 2px solid red;
+    
+
+  }
+
+
+  #messagesPanel {
+
+    border: 3px solid orange;
+   
+    background-color: #000363;
+  
+    
+ 
+  }
+
+
+
+ #mainEngineControls {
+   border: 2px solid yellow;
+   height: 6vw;
+   width: 90%;
+   display: block;
+   margin: auto;
+   background-color: grey;
+ }
+
+
+  #SceneControlsButtonsPanel{
+
+      border: 5px ridge red;
+      background-color: black;
+      height: 70%;
+      display: flex;
+      flex-direction: row;
+      margin: 5px;
+  }
+
+  .SceneControlsButtonContainer{
+      width: 5.0vw;
+      height: 2.0vw;
+      display: flex;
+      flex-direction: column;
+      border: 2px ridge grey;
+      margin: auto;
+      
+  }
+
+  
+  .SceneControlsButtonContainer button{
+      font-size: 0.6em;
+      font-family: Monospace;
+      width: 100%;
+      height:80%;
+      margin-top: 0px;
+      
+  }
+
+  .SceneControlsButtonContainer_indicatorLight{
+    border: 2px solid red;
+    height: 20%;
+    
+  }
+
+
+  
+
+
+  #joystickContainer{
+    border: 2px dotted blue;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #joystickArea {
+    
+    border: 5px ridge grey;
+    width: 11vw;
+    height: 11vw;
+    padding-bottom: 0.5vw;
+    
+    background:
+      repeating-linear-gradient(45deg, #242323,
+        #242323 8px, #f0b800 5px, #f0b800 15px);
+  }
+
+
+  #joystick {
+    background-color: black;
+    margin: auto;
+    margin-top: 0.5vw;
+    border: 2px solid red;
+    width: 80%;
+    height: 80%;
+
+  }
+
+  #joystick canvas {
+  
+    border: 2px solid yellow;
+    width: 90%;
+    height: 90%;
+    
+    
+    background: url("joystickImage.png");
+    background-size: cover;
+    margin: auto;
+    display: block;
+    margin-top: 0.4vw;
+  }
+
+
+  #joystickActiveTextIndicator {
+    color: black;
+    text-align: center;
+    border: 2px solid green;
+    width:82%;
+    height: 10%;
+    margin: auto;
+    font-size: 1vw;
+    margin-top: 0px;
+    
+    background-color: black;
+  }
+
+
+  #kneeboard{
+    border: 2px dotted red;
+    height: 5vw;
+
+  }
+
+  #clipboardManual{
+    border: 2px double yellow;
+    height: 100%;
+
+  }
+
+
+
+
+
+
+/*Mobile query*/
+@media only screen and (max-width: 600px) {
+
+
+
+}
+
+
+
+body{
+
+  background-color: black;
+
+  color: white;
+
+  font-family: courier;
+}
+
