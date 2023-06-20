@@ -1,0 +1,72 @@
+
+
+
+
+
+
+.hudArrows_TopGreenArrowsBlinking{
+
+  fill: lawngreen;
+  stroke: green;
+  stroke-width: 2;
+
+  animation-name: topGreenArrowsBlinkingAnim;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes topGreenArrowsBlinkingAnim {
+
+  0%{
+    fill: black;
+    stroke: black;
+
+  }
+
+  4%{
+    fill:#57E465;
+    stroke: #0D4312;
+  }
+
+/*Pinaccle Color*/
+  8%{
+    fill: #00EF17;
+    stroke: #088400;
+
+  }
+/*Pinaccle Color*/
+  49%{
+    fill: #00EF17;
+    stroke: #088400;
+  }
+
+  50%{
+    fill:#10881C;
+    stroke: #034409;
+  }
+
+  52%{
+    fill: #12721C;
+    stroke: #05550D;
+  }
+
+  53%{
+    fill: black;
+    stroke: black;
+  }
+
+  100%{
+    fill: black;
+    stroke: black;
+  }
+
+}
+
+
+.hudArrows_BottomGreenArrowsStaticOn{
+
+
+}
