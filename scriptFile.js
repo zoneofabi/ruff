@@ -3472,7 +3472,7 @@ function updateCamHatsSequential(){
   camKHat[2] = KHatZDisp_ZDisp;
 
 
- // console.log("APPLE FUCK");
+
 
 
 
